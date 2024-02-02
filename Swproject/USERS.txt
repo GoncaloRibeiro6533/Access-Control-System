@@ -1,0 +1,7 @@
+0;1234;Alan Turing;Turing machine is ready;
+1;2072;George Boole;
+2;0;Maurice Karnaugh;Simplification is possible;
+3;0;John von Neumann;
+4;1111;xpto;otpx;
+5;123456;xpto;
+6;0;Kathleen Booth;

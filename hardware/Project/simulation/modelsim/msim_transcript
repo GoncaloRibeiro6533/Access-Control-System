@@ -1,0 +1,112 @@
+# Reading pref.tcl
+# do project_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/ISEL/2022-2023/V/LIC/Project/DoorController.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:51:31 on Jun 06,2023
+# vcom -reportprogress 300 -93 -work work C:/ISEL/2022-2023/V/LIC/Project/DoorController.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity DoorController
+# -- Compiling architecture behavioral of DoorController
+# End time: 13:51:31 on Jun 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.doorcontroller
+# vsim work.doorcontroller 
+# Start time: 13:51:51 on Jun 06,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.doorcontroller(behavioral)
+add wave -position insertpoint sim:/doorcontroller/*
+force -freeze sim:/doorcontroller/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/doorcontroller/reset 1 0
+force -freeze sim:/doorcontroller/Sclose 0 0
+force -freeze sim:/doorcontroller/Sopen 1 0
+force -freeze sim:/doorcontroller/Psensor 0 0
+run
+force -freeze sim:/doorcontroller/Dval 1 0
+force -freeze sim:/doorcontroller/Din 00001 0
+force -freeze sim:/doorcontroller/Din 00000 0
+run
+run
+run
+force -freeze sim:/doorcontroller/reset 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/doorcontroller/Psensor 1 0
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/doorcontroller/Psensor 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/doorcontroller/Psensor 1 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/doorcontroller/Psensor 0 0
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/doorcontroller/Sclose 1 0
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/doorcontroller/Dval 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# End time: 18:20:19 on Jun 06,2023, Elapsed time: 4:28:28
+# Errors: 0, Warnings: 0
